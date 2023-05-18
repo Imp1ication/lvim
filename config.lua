@@ -7,5 +7,7 @@ reload("user.options")
 reload("user.keymaps")
 reload("user.plugins")
 
+reload("core.bufferline")
 reload("core.lualine")
 reload("core.comment")
+
