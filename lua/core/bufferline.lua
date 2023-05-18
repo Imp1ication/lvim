@@ -38,11 +38,9 @@ lvim.builtin.bufferline = {
 		offsets = {
 			{
 				filetype = "NvimTree",
-				text = function()
-					return string.gsub(vim.fn.getcwd(), vim.env.HOME, "~", 1)
-				end, -- set hide root in nvim tree
-				text_align = "left", -- "left", "center", "right"
-				highlight = "Directory",
+                text = "Explorer",
+				text_align = "center", -- "left", "center", "right"
+				highlight = "Pmenu",
 			},
 		},
 	},

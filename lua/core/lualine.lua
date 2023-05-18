@@ -1,9 +1,3 @@
-local status_ok, lualine = pcall(require, "lualine")
-if not status_ok then
-	vim.notify("Error from lualine")
-	return
-end
-
 local colors = {
 	black = "#202328",
 	white = "#bbc2cf",

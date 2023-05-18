@@ -10,4 +10,5 @@ reload("user.plugins")
 reload("core.bufferline")
 reload("core.lualine")
 reload("core.comment")
+reload("core.nvimtree")
 
