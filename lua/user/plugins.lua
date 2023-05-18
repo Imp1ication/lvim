@@ -6,7 +6,15 @@ lvim.plugins = {
     { "mrjones2014/nvim-ts-rainbow" },
 
     -- Copilot
-    {"github/copilot.vim"},
+	{ "zbirenbaum/copilot.lua" },
+	{
+		"zbirenbaum/copilot-cmp",
+		after = { "copilot.lua" },
+		config = function()
+			require("copilot_cmp").setup()
+		end,
+	},
+    -- {"github/copilot.vim"},
 }
 
 -- Colorscheme

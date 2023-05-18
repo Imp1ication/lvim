@@ -6,7 +6,7 @@
 reload("user.options")
 reload("user.keymaps")
 reload("user.plugins")
--- reload("user.copilot")
+reload("user.copilot")
 
 reload("core.bufferline")
 reload("core.lualine")
@@ -15,4 +15,3 @@ reload("core.nvimtree")
 reload("core.cmp")
 reload("core.lspconfig")
 reload("core.null-ls")
-
