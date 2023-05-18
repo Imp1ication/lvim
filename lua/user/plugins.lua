@@ -1,4 +1,3 @@
-
 lvim.plugins = {
     -- Colorscheme
     { "sainnhe/sonokai" },
@@ -6,6 +5,8 @@ lvim.plugins = {
     -- Rainbow parentheses
     { "mrjones2014/nvim-ts-rainbow" },
 
+    -- Copilot
+    {"github/copilot.vim"},
 }
 
 -- Colorscheme
@@ -14,4 +15,3 @@ lvim.colorscheme = "sonokai"
 
 -- Rainbow parentheses
 lvim.builtin.treesitter.rainbow.enable = true
-

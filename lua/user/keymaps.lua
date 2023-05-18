@@ -46,9 +46,18 @@ lvim.keys.normal_mode = {
 	["<S-l>"] = ":BufferLineCycleNext<Cr>",
 
     -- Telescope
+    ["<leader>f"] = false,
     ["<leader>ff"] = ":Telescope find_files<Cr>",
     ["<leader>fo"] = ":Telescope oldfiles<Cr>",
     ["<leader>fg"] = ":Telescope live_grep<Cr>",
+
+    -- Diagnostic
+    ["<leader>gk"] = ":lua vim.diagnostic.goto_prev()<Cr>zt",
+    ["<leader>gj"] = ":lua vim.diagostic.goto_next()<Cr>zt",
+
+    -- Lsp
+    ["<leader>fm"] = ":lua vim.lsp.buf.format()<Cr>",
+    ["<leader>rn"] = ":lua vim.lsp.buf.rename()<Cr>",
 
 	-- Move current line / block with Alt-j/k.
 	-- ["<A-j>"] = false,
