@@ -5,6 +5,9 @@ lvim.plugins = {
     -- Rainbow parentheses
     { "mrjones2014/nvim-ts-rainbow" },
 
+    -- Context
+    {"nvim-treesitter/nvim-treesitter-context"},
+
     -- Copilot
     { "zbirenbaum/copilot.lua" },
     {
