@@ -17,7 +17,6 @@ local header_small = {
     "",
     "",
     "",
-    "",
 }
 
 local header_mid = {
@@ -32,7 +31,6 @@ local header_mid = {
     "  ██║██║╚██╔╝██║██╔═══╝ ██║     ██║██║     ██╔══██║   ██║   ██║██║   ██║██║╚██╗██║ ",
     "  ██║██║ ╚═╝ ██║██║     ███████╗██║╚██████╗██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║ ",
     "  ╚═╝╚═╝     ╚═╝╚═╝     ╚══════╝╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ",
-    "",
     "",
     "",
     "",
@@ -62,10 +60,9 @@ local header_alt = {
     "",
     "",
     "",
-    "",
 }
 
-local db = require "alpha.themes.dashboard"
+local db = lvim.builtin.alpha.dashboard
 
 db.section.header.val = function()
     if vim.fn.winwidth(0) > 120 then
@@ -77,29 +74,30 @@ db.section.header.val = function()
     end
 end
 
-db.section.header.opts.hl = "Include"
-
 -- Center --
-db.section.buttons.val = {
-    db.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
-    db.button("f", "  Find file", ":Telescope find_files <CR>"),
---    db.button("p", "  Find project", ":Telescope projects <CR>"),
-    db.button("t", "  Find text", ":Telescope live_grep <CR>"),
-    db.button("o", "  Old files", ":Telescope oldfiles <CR>"),
-    db.button("c", "  Colorscheme", ":Telescope colorscheme <CR>"),
-    db.button("q", "  Quit Neovim", ":qa<CR>"),
+db.section.buttons.entries = {
+    {"f", "  Find file", ":Telescope find_files <CR>"},
+    {"n", "  New file", ":ene <BAR> startinsert <CR>"},
+    {"p", "  Project", ":Telescope projects <CR>"},
+    {"o", "  Old files", ":Telescope oldfiles <CR>"},
+    {"t", "  Find text", ":Telescope live_grep <CR>"},
+    {"c", "  Colorscheme", ":Telescope colorscheme <CR>"},
+    {
+        "s",
+        lvim.icons.ui.Gear .. "  Settings",
+        ":edit " .. require("lvim.config"):get_user_config_path() .. " <Cr>"
+    },
+    {"q", "  Quit", ":qa<CR>"},
 }
-
-db.section.buttons.opts.hl = "Keyword"
 
 -- Footer --
 db.section.footer.val = {
     "",
     "",
     "",
-    "",
-    "",
     "Support you, carry me.",
 }
 
-db.section.footer.opts.hl = "Type"
+db.section.header.opts.hl = "Label"
+db.section.buttons.opts.hl_shortcut = "Include"
+db.section.footer.opts.hl = "Number"
