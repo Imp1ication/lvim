@@ -59,13 +59,13 @@ lvim.keys.normal_mode = {
     -- Lsp
     ["<leader>fm"] = ":lua vim.lsp.buf.format()<Cr>",
     ["<leader>rn"] = ":lua vim.lsp.buf.rename()<Cr>",
-    ["<leader>gd"] = ":lua vim.lsp.buf.definition()<Cr>",
-    ["<leader>gD"] = ":lua vim.lsp.buf.declaration()<Cr>",
-    ["<leader>ga"] = ":lua vim.lsp.buf.code_action()<Cr>",
-    ["<leader>gI"] = ":lua vim.lsp.buf.implementation()<Cr>",
-    ["<leader>gr"] = ":lua vim.lsp.buf.references()<Cr>",
+    ["gd"] = ":lua vim.lsp.buf.definition()<Cr>",
+    ["gD"] = ":lua vim.lsp.buf.declaration()<Cr>",
+    ["ga"] = ":lua vim.lsp.buf.code_action()<Cr>",
+    ["gI"] = ":lua vim.lsp.buf.implementation()<Cr>",
+    ["gr"] = ":lua vim.lsp.buf.references()<Cr>",
     ["K"] = ":lua vim.lsp.buf.hover()<Cr>",
-    ["<leader>gs"] = ":lua vim.lsp.buf.signature_help()<Cr>",
+    ["gs"] = ":lua vim.lsp.buf.signature_help()<Cr>",
     
 	-- Move current line / block with Alt-j/k.
 	-- ["<A-j>"] = false,
