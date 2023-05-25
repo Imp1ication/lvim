@@ -22,7 +22,10 @@ lvim.keys.normal_mode = {
     ["<leader>d"] = "\"_d",
 
     -- Add empty line without get into insert mode
-    ["<Cr>"] = "o<Esc>k";
+    ["<Cr>"] = "o<Esc>k",
+
+    -- Search mark
+    ["/"] = "ms/",
 
 	-- -- Better window movement
 	-- ["<C-h>"] = false,
@@ -66,7 +69,7 @@ lvim.keys.normal_mode = {
     ["gr"] = ":lua vim.lsp.buf.references()<Cr>",
     ["K"] = ":lua vim.lsp.buf.hover()<Cr>",
     ["gs"] = ":lua vim.lsp.buf.signature_help()<Cr>",
-    
+
 	-- Move current line / block with Alt-j/k.
 	-- ["<A-j>"] = false,
 	-- ["<A-k>"] = false,
