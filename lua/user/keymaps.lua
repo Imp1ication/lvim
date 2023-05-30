@@ -55,9 +55,9 @@ lvim.keys.normal_mode = {
     ["<leader>fg"] = ":Telescope live_grep<Cr>",
 
     -- Diagnostic
-    ["<leader>gk"] = ":lua vim.diagnostic.goto_prev()<Cr>zt",
-    ["<leader>gj"] = ":lua vim.diagostic.goto_next()<Cr>zt",
-    ["<leader>gl"] = ":lua vim.diagostic.open_float()<Cr>",
+    ["gk"] = ":lua vim.diagnostic.goto_prev()<Cr>zt",
+    ["gj"] = ":lua vim.diagnostic.goto_next()<Cr>zt",
+    ["gl"] = ":lua vim.diagnostic.open_float()<Cr>",
 
     -- Lsp
     ["<leader>fm"] = ":lua vim.lsp.buf.format()<Cr>",
