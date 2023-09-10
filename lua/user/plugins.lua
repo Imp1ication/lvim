@@ -19,6 +19,8 @@ lvim.plugins = {
 }
 
 -- Colorscheme
+vim.o.background = "dark"
+
 vim.g.sonokai_style = "shusia"
 lvim.colorscheme = "sonokai"
 
