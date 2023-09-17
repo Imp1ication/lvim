@@ -22,7 +22,7 @@ lvim.plugins = {
 vim.o.background = "dark"
 
 vim.g.sonokai_style = "shusia"
-lvim.colorscheme = "sonokai"
+lvim.colorscheme = "tokyonight-night"
 
 -- Rainbow parentheses
 lvim.builtin.treesitter.rainbow.enable = true
